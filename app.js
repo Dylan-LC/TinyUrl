@@ -8,6 +8,7 @@ app.get('/', function(req, res){
 
 app.get('/:uid', function(req, res){
   // redirect tinyurl
+  res.redirect('https://google.com');
 })
 
 var uid = function(length) {
