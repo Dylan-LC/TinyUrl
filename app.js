@@ -1,6 +1,9 @@
 var express = require('express');
 var app = express();
 
+// require and connect mongodb
+require('./db'); // files with same directory level
+
 app.get('/', function(req, res){
   // create tinyurl
   res.send(uid(5));
